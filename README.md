@@ -1,5 +1,7 @@
 # Assignment 3: MNIST GAN
 
+Repository: [XiaohanZhao-mire/ai-course-assignment-3](https://github.com/XiaohanZhao-mire/ai-course-assignment-3)
+
 A PyTorch GAN with the architecture in Assignment3.pdf, trained on MNIST and added to the course FastAPI application. Trained weights are included; API startup does not train a model or download MNIST.
 
 ## Run with Docker
