@@ -1,0 +1,121 @@
+{"device": "mps", "training_images": 60000, "epochs": 20, "batch_size": 128, "seed": 42}
+epoch=1 batch=0 D=1.7354 G=0.7079
+epoch=1 batch=100 D=0.1620 G=2.8378
+epoch=1 batch=200 D=0.3630 G=3.7265
+epoch=1 batch=300 D=0.4346 G=1.3671
+epoch=1 batch=400 D=0.4647 G=1.6817
+{"epoch": 1, "discriminator_loss": 0.467091828584671, "generator_loss": 2.5719144344329834, "seconds": 13.99}
+epoch=2 batch=0 D=0.5699 G=2.9820
+epoch=2 batch=100 D=0.4323 G=2.1143
+epoch=2 batch=200 D=0.5070 G=1.2344
+epoch=2 batch=300 D=0.3314 G=2.2050
+epoch=2 batch=400 D=0.3258 G=2.1987
+{"epoch": 2, "discriminator_loss": 0.47946324944496155, "generator_loss": 2.0248005390167236, "seconds": 11.36}
+epoch=3 batch=0 D=0.4014 G=1.3782
+epoch=3 batch=100 D=0.3533 G=2.1053
+epoch=3 batch=200 D=0.4454 G=1.6114
+epoch=3 batch=300 D=0.5262 G=2.0487
+epoch=3 batch=400 D=0.4435 G=1.9819
+{"epoch": 3, "discriminator_loss": 0.5180151462554932, "generator_loss": 2.1087100505828857, "seconds": 11.36}
+epoch=4 batch=0 D=0.6062 G=1.3093
+epoch=4 batch=100 D=0.4897 G=2.2401
+epoch=4 batch=200 D=3.4518 G=3.8697
+epoch=4 batch=300 D=0.5126 G=2.7411
+epoch=4 batch=400 D=0.5260 G=2.0738
+{"epoch": 4, "discriminator_loss": 0.5612192749977112, "generator_loss": 1.9508213996887207, "seconds": 11.44}
+epoch=5 batch=0 D=0.4430 G=1.5096
+epoch=5 batch=100 D=0.4860 G=1.9572
+epoch=5 batch=200 D=0.5331 G=1.4873
+epoch=5 batch=300 D=0.4852 G=1.9557
+epoch=5 batch=400 D=0.6064 G=1.3531
+{"epoch": 5, "discriminator_loss": 0.6252228021621704, "generator_loss": 1.9507098197937012, "seconds": 11.38}
+epoch=6 batch=0 D=0.4804 G=1.5064
+epoch=6 batch=100 D=0.4798 G=1.8299
+epoch=6 batch=200 D=0.4168 G=2.0704
+epoch=6 batch=300 D=0.5072 G=2.5422
+epoch=6 batch=400 D=0.5445 G=1.8235
+{"epoch": 6, "discriminator_loss": 0.6061385869979858, "generator_loss": 1.9871665239334106, "seconds": 11.36}
+epoch=7 batch=0 D=1.9714 G=0.0605
+epoch=7 batch=100 D=0.4259 G=1.5348
+epoch=7 batch=200 D=0.4865 G=1.6557
+epoch=7 batch=300 D=0.4793 G=2.9606
+epoch=7 batch=400 D=0.5810 G=1.4302
+{"epoch": 7, "discriminator_loss": 0.5898362398147583, "generator_loss": 2.055023670196533, "seconds": 11.38}
+epoch=8 batch=0 D=0.5883 G=2.5169
+epoch=8 batch=100 D=0.7270 G=1.3867
+epoch=8 batch=200 D=0.4294 G=1.9860
+epoch=8 batch=300 D=0.4928 G=1.7926
+epoch=8 batch=400 D=0.3726 G=1.9014
+{"epoch": 8, "discriminator_loss": 0.5574464201927185, "generator_loss": 2.112539291381836, "seconds": 11.62}
+epoch=9 batch=0 D=0.5239 G=2.0714
+epoch=9 batch=100 D=0.6604 G=3.3772
+epoch=9 batch=200 D=0.7081 G=2.1723
+epoch=9 batch=300 D=0.5953 G=1.8175
+epoch=9 batch=400 D=0.3853 G=2.7174
+{"epoch": 9, "discriminator_loss": 0.5403236746788025, "generator_loss": 2.213167667388916, "seconds": 11.67}
+epoch=10 batch=0 D=0.4115 G=2.9441
+epoch=10 batch=100 D=0.4453 G=2.5050
+epoch=10 batch=200 D=0.4109 G=2.4033
+epoch=10 batch=300 D=0.3449 G=2.2927
+epoch=10 batch=400 D=0.4150 G=3.0753
+{"epoch": 10, "discriminator_loss": 0.4763173460960388, "generator_loss": 2.3184518814086914, "seconds": 11.67}
+epoch=11 batch=0 D=2.6033 G=6.2354
+epoch=11 batch=100 D=0.3960 G=1.9458
+epoch=11 batch=200 D=0.4758 G=3.1942
+epoch=11 batch=300 D=0.3921 G=2.6070
+epoch=11 batch=400 D=0.4623 G=2.2954
+{"epoch": 11, "discriminator_loss": 0.5343770980834961, "generator_loss": 2.2928965091705322, "seconds": 11.68}
+epoch=12 batch=0 D=0.3221 G=2.7836
+epoch=12 batch=100 D=0.3385 G=2.0356
+epoch=12 batch=200 D=0.3731 G=1.9680
+epoch=12 batch=300 D=0.3691 G=2.4232
+epoch=12 batch=400 D=0.3393 G=2.2361
+{"epoch": 12, "discriminator_loss": 0.42693182826042175, "generator_loss": 2.502031087875366, "seconds": 11.68}
+epoch=13 batch=0 D=0.3248 G=2.6900
+epoch=13 batch=100 D=0.6918 G=2.4882
+epoch=13 batch=200 D=0.3743 G=2.6257
+epoch=13 batch=300 D=0.4349 G=2.0916
+epoch=13 batch=400 D=0.3836 G=1.9603
+{"epoch": 13, "discriminator_loss": 0.4702630937099457, "generator_loss": 2.4504048824310303, "seconds": 11.78}
+epoch=14 batch=0 D=0.3543 G=3.4598
+epoch=14 batch=100 D=0.7156 G=3.6200
+epoch=14 batch=200 D=0.3582 G=1.4387
+epoch=14 batch=300 D=0.2663 G=2.5659
+epoch=14 batch=400 D=1.2526 G=0.5018
+{"epoch": 14, "discriminator_loss": 0.43938422203063965, "generator_loss": 2.577791690826416, "seconds": 11.82}
+epoch=15 batch=0 D=0.4391 G=2.6250
+epoch=15 batch=100 D=0.2983 G=3.0846
+epoch=15 batch=200 D=0.3091 G=2.4081
+epoch=15 batch=300 D=0.6054 G=4.1706
+epoch=15 batch=400 D=0.3587 G=1.0751
+{"epoch": 15, "discriminator_loss": 0.4647964835166931, "generator_loss": 2.628699779510498, "seconds": 11.84}
+epoch=16 batch=0 D=0.5361 G=2.7557
+epoch=16 batch=100 D=0.3871 G=3.0138
+epoch=16 batch=200 D=0.2897 G=2.2631
+epoch=16 batch=300 D=0.3446 G=2.6304
+epoch=16 batch=400 D=0.4449 G=1.6696
+{"epoch": 16, "discriminator_loss": 0.4019097685813904, "generator_loss": 2.6575825214385986, "seconds": 11.86}
+epoch=17 batch=0 D=0.2733 G=2.6316
+epoch=17 batch=100 D=0.4567 G=3.5892
+epoch=17 batch=200 D=0.3466 G=2.3155
+epoch=17 batch=300 D=0.3857 G=3.0338
+epoch=17 batch=400 D=0.6136 G=4.6963
+{"epoch": 17, "discriminator_loss": 0.366883248090744, "generator_loss": 2.8253512382507324, "seconds": 11.84}
+epoch=18 batch=0 D=1.6632 G=7.0035
+epoch=18 batch=100 D=0.3981 G=1.4987
+epoch=18 batch=200 D=0.4279 G=2.1276
+epoch=18 batch=300 D=0.3424 G=2.2023
+epoch=18 batch=400 D=0.4209 G=2.4310
+{"epoch": 18, "discriminator_loss": 0.41385120153427124, "generator_loss": 2.7753310203552246, "seconds": 11.96}
+epoch=19 batch=0 D=0.3203 G=2.4489
+epoch=19 batch=100 D=0.3569 G=3.3720
+epoch=19 batch=200 D=0.2236 G=2.0089
+epoch=19 batch=300 D=0.3344 G=4.0032
+epoch=19 batch=400 D=0.3591 G=3.4224
+{"epoch": 19, "discriminator_loss": 0.36319103837013245, "generator_loss": 2.9037840366363525, "seconds": 11.88}
+epoch=20 batch=0 D=0.2783 G=2.9910
+epoch=20 batch=100 D=0.2692 G=3.8964
+epoch=20 batch=200 D=0.2643 G=2.4491
+epoch=20 batch=300 D=0.3125 G=2.7465
+epoch=20 batch=400 D=0.3334 G=3.5074
+{"epoch": 20, "discriminator_loss": 0.3325507938861847, "generator_loss": 2.9985756874084473, "seconds": 11.79}

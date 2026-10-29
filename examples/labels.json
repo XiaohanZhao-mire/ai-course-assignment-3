@@ -1,0 +1,62 @@
+[
+  {
+    "file": "test_00_cat.png",
+    "test_index": 0,
+    "true_class_id": 3,
+    "true_class_name": "cat"
+  },
+  {
+    "file": "test_01_ship.png",
+    "test_index": 1,
+    "true_class_id": 8,
+    "true_class_name": "ship"
+  },
+  {
+    "file": "test_02_ship.png",
+    "test_index": 2,
+    "true_class_id": 8,
+    "true_class_name": "ship"
+  },
+  {
+    "file": "test_03_airplane.png",
+    "test_index": 3,
+    "true_class_id": 0,
+    "true_class_name": "airplane"
+  },
+  {
+    "file": "test_04_frog.png",
+    "test_index": 4,
+    "true_class_id": 6,
+    "true_class_name": "frog"
+  },
+  {
+    "file": "test_05_frog.png",
+    "test_index": 5,
+    "true_class_id": 6,
+    "true_class_name": "frog"
+  },
+  {
+    "file": "test_06_automobile.png",
+    "test_index": 6,
+    "true_class_id": 1,
+    "true_class_name": "automobile"
+  },
+  {
+    "file": "test_07_frog.png",
+    "test_index": 7,
+    "true_class_id": 6,
+    "true_class_name": "frog"
+  },
+  {
+    "file": "test_08_cat.png",
+    "test_index": 8,
+    "true_class_id": 3,
+    "true_class_name": "cat"
+  },
+  {
+    "file": "test_09_automobile.png",
+    "test_index": 9,
+    "true_class_id": 1,
+    "true_class_name": "automobile"
+  }
+]

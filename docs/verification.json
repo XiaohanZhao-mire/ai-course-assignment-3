@@ -1,0 +1,11 @@
+{
+  "local_pytest": "46 passed",
+  "http_smoke_test": "PASS",
+  "trained_epochs": 20,
+  "training_images": 60000,
+  "checkpoint_sha256": {
+    "mnist_generator.pt": "c1a3b02eceaa706127cd87f5352fbb365f71d34d29951c426f641e42bf49b037",
+    "mnist_discriminator.pt": "79855b3d395ab750bc61962e73b69e28e3fd5c4aef60f528d688e18e8a85cb35"
+  },
+  "docker": "Not yet run; Docker unavailable locally. GitHub Actions workflow included."
+}

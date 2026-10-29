@@ -1,0 +1,26 @@
+name: Test API and Docker deployment
+on: [push, workflow_dispatch]
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build deployment image
+        run: docker build -t assignment3-gan .
+      - name: Test architectures, training step, real models, and API
+        run: |
+          docker run --rm -v "$PWD/tests:/code/tests:ro" -v "$PWD/scripts:/code/scripts:ro" assignment3-gan uv run --frozen pytest -q
+      - name: Start deployment and query it over HTTP
+        run: |
+          docker run -d --name assignment-api -p 8000:8000 assignment3-gan
+          for attempt in $(seq 1 60); do
+            if curl --fail --silent http://127.0.0.1:8000/; then break; fi
+            sleep 2
+          done
+          python3 scripts/smoke_test.py
+      - name: Container logs
+        if: always()
+        run: docker logs assignment-api || true
