@@ -1,6 +1,6 @@
 # Assignment 4 · Advanced image generation
 
-This extends the Module 6 FastAPI app with two unconditional CIFAR-10 generators. Both trained checkpoints ship in the image and run on CPU. The assignment answers, derivations and generated samples are in [Assignment4_XiaohanZhao.pdf](docs/Assignment4_XiaohanZhao.pdf).
+This extends the Module 6 FastAPI app with two unconditional CIFAR-10 generators. Both trained checkpoints ship in the image and run on CPU. Questions 1–9 and their worked answers are in [Assignment4_XiaohanZhao.docx](docs/Assignment4_XiaohanZhao.docx) and [Assignment4_XiaohanZhao.pdf](docs/Assignment4_XiaohanZhao.pdf). The [diffusion](examples/cifar_diffusion_samples.png) and [energy](examples/cifar_energy_samples.png) sample rows use seeds 0–5 from left to right.
 
 ## Run with Docker
 
