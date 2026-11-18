@@ -1,7 +1,7 @@
-"""Course API with embeddings, CIFAR-10 classification, and MNIST generation."""
+"""Course API with embeddings, CIFAR-10 classification, and MNIST and CIFAR-10 generation."""
 
 from contextlib import asynccontextmanager
-from typing import Annotated
+from typing import Annotated, Literal
 
 from fastapi import FastAPI, HTTPException, Query, Request, UploadFile, File
 from fastapi.responses import Response
@@ -11,6 +11,7 @@ from app.bigram_model import BigramModel
 from app.embedding_model import EmbeddingModel
 from app.image_classifier import ImageClassifier, MAX_UPLOAD_BYTES
 from app.digit_generator import DigitGenerator
+from app.cifar_generator import CifarGenerators
 
 corpus = [
     "The Count of Monte Cristo is a novel written by Alexandre Dumas. "
@@ -27,10 +28,11 @@ async def lifespan(app: FastAPI):
     app.state.embedding_model = EmbeddingModel()
     app.state.image_classifier = ImageClassifier()
     app.state.digit_generator = DigitGenerator()
+    app.state.cifar_generators = CifarGenerators()
     yield
 
 
-app = FastAPI(title="Assignment 3: MNIST GAN and Course API", version="0.3.0", lifespan=lifespan)
+app = FastAPI(title="Module 8: CIFAR-10 image generators", version="0.4.0", lifespan=lifespan)
 
 
 @app.get('/generate-digit', responses={200: {'content': {'image/png': {}}}}, response_class=Response)
@@ -107,3 +109,16 @@ def get_embedding(request: Request, word: Annotated[Word, Query(description="One
         raise HTTPException(status_code=422, detail=str(exc)) from exc
     except LookupError as exc:
         raise HTTPException(status_code=404, detail=str(exc)) from exc
+
+@app.get("/generate-image/{model}", response_class=Response,
+         responses={200: {"content": {"image/png": {}}}})
+def generate_image(
+    model: Literal["diffusion", "energy"],
+    request: Request,
+    seed: Annotated[int | None, Query(ge=0, le=4294967295)] = None,
+):
+    """Generate one 32 × 32 RGB CIFAR-10-style image with either trained model."""
+    png, used_seed = request.app.state.cifar_generators.generate(model, seed)
+    return Response(png, media_type="image/png", headers={
+        "X-Seed": str(used_seed), "Cache-Control": "no-store",
+    })

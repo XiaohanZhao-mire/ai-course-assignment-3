@@ -85,3 +85,13 @@ metadata = get('/gan-info')
 assert metadata['training_images'] == 60000 and metadata['epochs'] > 0
 print(json.dumps({'status': 'PASS', 'gan': 'trained MNIST checkpoint',
                   'epochs': metadata['epochs'], 'checks': 'PNG, grid, seeds, invalid inputs'}, indent=2))
+
+for model in ("diffusion", "energy"):
+    with urlopen(base + f"/generate-image/{model}?seed=42", timeout=60) as response:
+        content = response.read()
+        assert response.headers["Content-Type"] == "image/png"
+        assert response.headers["X-Seed"] == "42"
+        assert content[:8] == b"\x89PNG\r\n\x1a\n"
+        assert struct.unpack(">II", content[16:24]) == (32, 32)
+        assert content[24:26] == bytes((8, 2))  # 8-bit RGB
+        print(f"PASS {model}: 32 x 32 RGB PNG")

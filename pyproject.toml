@@ -1,7 +1,7 @@
 [project]
 name = "gentext-app"
-version = "0.3.0"
-description = "Assignment 3 MNIST GAN added to the course FastAPI project"
+version = "0.4.0"
+description = "CIFAR-10 diffusion and energy generators for the course API"
 requires-python = ">=3.12,<3.13"
 dependencies = [
     "fastapi>=0.115,<1.0",
